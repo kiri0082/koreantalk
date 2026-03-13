@@ -56,6 +56,7 @@ final class ConversationViewModel: ObservableObject {
     private let intentDetector: IntentDetector
 
     private var streamTask: Task<Void, Never>?
+    private var autoRestartTask: Task<Void, Never>?
     private var isInHelpMode = false
     private var cancellables = Set<AnyCancellable>()
 
@@ -94,8 +95,11 @@ final class ConversationViewModel: ObservableObject {
                     Logger.vm.info("STT returned empty (silence) — autoListen=\(self.settings.autoListenEnabled)")
                     self.conversationState = .idle
                     if self.settings.autoListenEnabled && !self.isInHelpMode {
-                        try? await Task.sleep(nanoseconds: 300_000_000)
-                        self.startListening()
+                        self.autoRestartTask = Task {
+                            try? await Task.sleep(nanoseconds: 300_000_000)
+                            guard !Task.isCancelled else { return }
+                            self.startListening()
+                        }
                     }
                     return
                 }
@@ -172,6 +176,8 @@ final class ConversationViewModel: ObservableObject {
 
     func cancelListening() {
         Logger.vm.info("cancelListening called")
+        autoRestartTask?.cancel()
+        autoRestartTask = nil
         speechRecognizer.cancel()
         liveTranscript = ""
         conversationState = .idle
@@ -325,16 +331,18 @@ final class ConversationViewModel: ObservableObject {
             Logger.vm.info("Speaking finished — help mode, waiting for 'continue'")
             conversationState = .helpPaused
             if settings.autoListenEnabled {
-                Task {
+                autoRestartTask = Task {
                     try? await Task.sleep(nanoseconds: 400_000_000)
+                    guard !Task.isCancelled else { return }
                     startListening()
                 }
             }
         } else if settings.autoListenEnabled {
-            Logger.vm.info("Speaking finished — auto-listen enabled, restarting mic after 0.5s")
+            Logger.vm.info("Speaking finished — auto-listen enabled, restarting mic after 250ms")
             conversationState = .idle
-            Task {
-                try? await Task.sleep(nanoseconds: 500_000_000)
+            autoRestartTask = Task {
+                try? await Task.sleep(nanoseconds: 250_000_000)
+                guard !Task.isCancelled else { return }
                 startListening()
             }
         } else {

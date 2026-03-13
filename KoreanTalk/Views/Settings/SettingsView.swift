@@ -110,6 +110,7 @@ struct SettingsView: View {
 
             if !viewModel.elevenLabsVoices.isEmpty {
                 Picker("Voice", selection: $viewModel.settings.elevenLabsVoiceID) {
+                    Text("Auto").tag("")
                     ForEach(viewModel.elevenLabsVoices) { voice in
                         Text(voice.name).tag(voice.id)
                     }
