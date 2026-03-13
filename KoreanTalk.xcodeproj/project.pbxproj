@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		058A984B2F6397CC00681EC1 /* AppLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 058A984A2F6397CC00681EC1 /* AppLogger.swift */; };
+		18B4FF7E79018A5FFD0F4A2E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA676F947AC3B91C20F398E9 /* AVFoundation.framework */; };
+		207E6208B24BFE433A3D338B /* IntentDetector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8396BFC5EBC82232143E3CF7 /* IntentDetector.swift */; };
+		3F675AF3A7466A97A8F3540E /* KoreanSpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AB6E8BDF29055AC6C5F3C8 /* KoreanSpeechRecognizer.swift */; };
+		4C90BE4E08F57CA2EC7F3EDF /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167ADCB497E8EDFF8A85AC19 /* RootView.swift */; };
+		586EC02641ED923751060A99 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1BEE736D7F5354106E577D2 /* SettingsViewModel.swift */; };
+		5C11CD8BB69BDDF284729AE6 /* KoreanTTSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C288F500D1251F8C670D3E /* KoreanTTSService.swift */; };
+		666369CE74561439CE7A3C8F /* MicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2374EAFFB9EC5067609DE6F0 /* MicButton.swift */; };
+		6C5AE4A1BD5E5D17994A47FD /* DifficultyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1605900C9CB7181F95EA35E /* DifficultyLevel.swift */; };
+		81EE180EDA3558F7BA8B4614 /* OpenAICompatibleClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E30F318F05C9AFB70BEF877 /* OpenAICompatibleClient.swift */; };
+		8D5A0CFD60243A7904970F83 /* TypingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9675A4CEA40369D000D156 /* TypingIndicator.swift */; };
+		9F8CD4408757E2747961F55E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D09E9042F76E3D335014292 /* SettingsView.swift */; };
+		A6524CBE436469AC2A578724 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0040205805C71E951D76917 /* AppSettings.swift */; };
+		AE171ADA4AC0526A84A33501 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89BE0FC0722056E5D970CA63 /* ConversationView.swift */; };
+		B29E34585E12020B72BCFE73 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E47CC10AF59FE8FADFDD30 /* ChatMessage.swift */; };
+		C2C5573487B6CC6455F236A4 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6121BDC5614604C4D26CE79C /* MessageBubble.swift */; };
+		CC45FA97C99AEB8DB1184FBE /* ConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA54F58CEC93628A0C7A4DF7 /* ConversationViewModel.swift */; };
+		DBBFD05998DE27FC2ECB7BE7 /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6296504A55BE9D6A684A1665 /* Speech.framework */; };
+		E8AC436855B7B29FEF10687B /* SystemPromptBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A67C9499CFC7230E48F74363 /* SystemPromptBuilder.swift */; };
+		F336D33045E91F592E010CF8 /* KoreanTalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA82333AF263D34E0A0E656E /* KoreanTalkApp.swift */; };
+		F41DD3276A8CABBE193EF2BC /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E680E21C71DE2CA69F9EC8 /* AppEnvironment.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		058A984A2F6397CC00681EC1 /* AppLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLogger.swift; sourceTree = "<group>"; };
+		167ADCB497E8EDFF8A85AC19 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		2374EAFFB9EC5067609DE6F0 /* MicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicButton.swift; sourceTree = "<group>"; };
+		2E30F318F05C9AFB70BEF877 /* OpenAICompatibleClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAICompatibleClient.swift; sourceTree = "<group>"; };
+		37C288F500D1251F8C670D3E /* KoreanTTSService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanTTSService.swift; sourceTree = "<group>"; };
+		3B61BFC59B1D49ED7380B5EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5141EFFF35ACD6C51F274E4D /* KoreanTalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoreanTalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		57AB6E8BDF29055AC6C5F3C8 /* KoreanSpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanSpeechRecognizer.swift; sourceTree = "<group>"; };
+		6121BDC5614604C4D26CE79C /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		6296504A55BE9D6A684A1665 /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
+		6D09E9042F76E3D335014292 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7C9675A4CEA40369D000D156 /* TypingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypingIndicator.swift; sourceTree = "<group>"; };
+		80E680E21C71DE2CA69F9EC8 /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		81E47CC10AF59FE8FADFDD30 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		8396BFC5EBC82232143E3CF7 /* IntentDetector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentDetector.swift; sourceTree = "<group>"; };
+		89BE0FC0722056E5D970CA63 /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
+		A67C9499CFC7230E48F74363 /* SystemPromptBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemPromptBuilder.swift; sourceTree = "<group>"; };
+		B0040205805C71E951D76917 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		C1605900C9CB7181F95EA35E /* DifficultyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyLevel.swift; sourceTree = "<group>"; };
+		C1BEE736D7F5354106E577D2 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		DA54F58CEC93628A0C7A4DF7 /* ConversationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationViewModel.swift; sourceTree = "<group>"; };
+		DA676F947AC3B91C20F398E9 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FA82333AF263D34E0A0E656E /* KoreanTalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanTalkApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9E872B0C4F3AB11D258C39F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBBFD05998DE27FC2ECB7BE7 /* Speech.framework in Frameworks */,
+				18B4FF7E79018A5FFD0F4A2E /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		058A98492F63913400681EC1 /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				6296504A55BE9D6A684A1665 /* Speech.framework */,
+				DA676F947AC3B91C20F398E9 /* AVFoundation.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		0A85897F1A32FE9B91C081CD = {
+			isa = PBXGroup;
+			children = (
+				058A984A2F6397CC00681EC1 /* AppLogger.swift */,
+				1369CE758DE91ECD50B7E938 /* KoreanTalk */,
+				B88D7E26791946AEFDCC8BB7 /* Products */,
+				058A98492F63913400681EC1 /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		1369CE758DE91ECD50B7E938 /* KoreanTalk */ = {
+			isa = PBXGroup;
+			children = (
+				BC8E6A5FDB0FEE50AF1B10E7 /* Models */,
+				FA1196890D421541891D17B1 /* Services */,
+				F3533A2279EAD65233E99B38 /* ViewModels */,
+				F867080DDDCAA8CC74A91BE2 /* Views */,
+				80E680E21C71DE2CA69F9EC8 /* AppEnvironment.swift */,
+				FA82333AF263D34E0A0E656E /* KoreanTalkApp.swift */,
+				3B61BFC59B1D49ED7380B5EB /* Info.plist */,
+			);
+			path = KoreanTalk;
+			sourceTree = "<group>";
+		};
+		73980BC4E9074FCDA224A994 /* Conversation */ = {
+			isa = PBXGroup;
+			children = (
+				89BE0FC0722056E5D970CA63 /* ConversationView.swift */,
+				6121BDC5614604C4D26CE79C /* MessageBubble.swift */,
+				2374EAFFB9EC5067609DE6F0 /* MicButton.swift */,
+				7C9675A4CEA40369D000D156 /* TypingIndicator.swift */,
+			);
+			path = Conversation;
+			sourceTree = "<group>";
+		};
+		87C70582996E9ED1DE66C380 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6D09E9042F76E3D335014292 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		B88D7E26791946AEFDCC8BB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5141EFFF35ACD6C51F274E4D /* KoreanTalk.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC8E6A5FDB0FEE50AF1B10E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B0040205805C71E951D76917 /* AppSettings.swift */,
+				81E47CC10AF59FE8FADFDD30 /* ChatMessage.swift */,
+				C1605900C9CB7181F95EA35E /* DifficultyLevel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F3533A2279EAD65233E99B38 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DA54F58CEC93628A0C7A4DF7 /* ConversationViewModel.swift */,
+				C1BEE736D7F5354106E577D2 /* SettingsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F867080DDDCAA8CC74A91BE2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73980BC4E9074FCDA224A994 /* Conversation */,
+				87C70582996E9ED1DE66C380 /* Settings */,
+				167ADCB497E8EDFF8A85AC19 /* RootView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FA1196890D421541891D17B1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8396BFC5EBC82232143E3CF7 /* IntentDetector.swift */,
+				57AB6E8BDF29055AC6C5F3C8 /* KoreanSpeechRecognizer.swift */,
+				37C288F500D1251F8C670D3E /* KoreanTTSService.swift */,
+				2E30F318F05C9AFB70BEF877 /* OpenAICompatibleClient.swift */,
+				A67C9499CFC7230E48F74363 /* SystemPromptBuilder.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		730950AD798A77AD508AA9E2 /* KoreanTalk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4977ED30DDFEF48DA821F2BF /* Build configuration list for PBXNativeTarget "KoreanTalk" */;
+			buildPhases = (
+				7EE609159AC086BAB15FF998 /* Sources */,
+				A9E872B0C4F3AB11D258C39F /* Frameworks */,
+				A2892AFC2D88060C0AA91373 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KoreanTalk;
+			productName = KoreanTalk;
+			productReference = 5141EFFF35ACD6C51F274E4D /* KoreanTalk.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1781F676DEDF5767F3243DB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					730950AD798A77AD508AA9E2 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = EA8A7DC255B9760C07FA9248 /* Build configuration list for PBXProject "KoreanTalk" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A85897F1A32FE9B91C081CD;
+			productRefGroup = B88D7E26791946AEFDCC8BB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				730950AD798A77AD508AA9E2 /* KoreanTalk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2892AFC2D88060C0AA91373 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7EE609159AC086BAB15FF998 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F41DD3276A8CABBE193EF2BC /* AppEnvironment.swift in Sources */,
+				F336D33045E91F592E010CF8 /* KoreanTalkApp.swift in Sources */,
+				A6524CBE436469AC2A578724 /* AppSettings.swift in Sources */,
+				B29E34585E12020B72BCFE73 /* ChatMessage.swift in Sources */,
+				6C5AE4A1BD5E5D17994A47FD /* DifficultyLevel.swift in Sources */,
+				207E6208B24BFE433A3D338B /* IntentDetector.swift in Sources */,
+				3F675AF3A7466A97A8F3540E /* KoreanSpeechRecognizer.swift in Sources */,
+				5C11CD8BB69BDDF284729AE6 /* KoreanTTSService.swift in Sources */,
+				81EE180EDA3558F7BA8B4614 /* OpenAICompatibleClient.swift in Sources */,
+				E8AC436855B7B29FEF10687B /* SystemPromptBuilder.swift in Sources */,
+				CC45FA97C99AEB8DB1184FBE /* ConversationViewModel.swift in Sources */,
+				586EC02641ED923751060A99 /* SettingsViewModel.swift in Sources */,
+				AE171ADA4AC0526A84A33501 /* ConversationView.swift in Sources */,
+				C2C5573487B6CC6455F236A4 /* MessageBubble.swift in Sources */,
+				666369CE74561439CE7A3C8F /* MicButton.swift in Sources */,
+				8D5A0CFD60243A7904970F83 /* TypingIndicator.swift in Sources */,
+				4C90BE4E08F57CA2EC7F3EDF /* RootView.swift in Sources */,
+				9F8CD4408757E2747961F55E /* SettingsView.swift in Sources */,
+				058A984B2F6397CC00681EC1 /* AppLogger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		075A3F45448538490E577636 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSET_CATALOG_APP_ICON_SET = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3DF54B37DD809C22D4CD2641 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9T67TMC8H6;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KoreanTalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koreantalk.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9E4B6119718769058EA9DAB2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5C1CC7E09DDA6FA0D5A473E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9T67TMC8H6;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = KoreanTalk/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.koreantalk.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4977ED30DDFEF48DA821F2BF /* Build configuration list for PBXNativeTarget "KoreanTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5C1CC7E09DDA6FA0D5A473E /* Debug */,
+				3DF54B37DD809C22D4CD2641 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA8A7DC255B9760C07FA9248 /* Build configuration list for PBXProject "KoreanTalk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				075A3F45448538490E577636 /* Debug */,
+				9E4B6119718769058EA9DAB2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1781F676DEDF5767F3243DB0 /* Project object */;
+}
